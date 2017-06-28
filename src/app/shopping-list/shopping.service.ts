@@ -19,4 +19,10 @@ export class ShoppingService {
       return this.ingredients.slice();
   }
 
+  addIngredients(ingredients: Ingredient[]) {
+    // Spread method which turns array of elements into a list of elements
+    this.ingredients.push(...ingredients);
+    this.ingredientChanged.emit(this.ingredients.slice());
+  }
+
 }
