@@ -11,7 +11,10 @@ import {RecipeService} from '../recipe.service';
 })
 
 export class RecipeListComponent implements OnInit {
+<<<<<<< HEAD
 
+=======
+>>>>>>> efae416578d4ba53d69afabd0e967eae3f049b28
   recipes: Recipe[];
 
   constructor(private recipeService: RecipeService) { }
@@ -19,6 +22,9 @@ export class RecipeListComponent implements OnInit {
   ngOnInit() {
     this.recipes = this.recipeService.getRecipe();
   }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> efae416578d4ba53d69afabd0e967eae3f049b28
 }
